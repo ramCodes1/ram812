@@ -2,21 +2,28 @@ General Questions
 
 1. Name some tools and/or techniques that you personally find to be the most helpful surrounding development.
 
+Eclipse, IntelliJ, SQL, Spring MVC, tomcat.
+
 2. Name some tools and/or techniques that you personally find to be the most helpful surrounding code maintenance.
 
+SVN, Github, AWS
+
 3. Explain your familiarity with automation infrastructures. The questions below are to help give a guideline, please feel free to be as detailed as you please. 
-a. How did you deploy and execute your test suites? 
+a. How did you deploy and execute your test suites?  Usually we have pipelines set up that we have hooked up to our test suites that execute each time we execute a build. Selenium tests are usually executed after junit tests are. 
 b. How did you target different devices? 
-c. How did you handle scalability? 
-d. How did you report test results?
+c. How did you handle scalability? we'd often test for performance using tools like JMeter
+d. How did you report test results? Jmeter has a plethora charts in their dashboards to give an idea of throughputs and other performances tests that were ran.
 
 4. What testing frameworks are you familiar with for system level/desktop applications? 
+we'd normally have some python scripts that we'd run for desktop applications
 
 5. What testing frameworks are you familiar with for browser applications? 
-
+Selenium webdriver, robot framework, cucumber. 
 6. What tools are you familiar with for Performance, Load and Stress testing? 
+Jmeter pretty extensively, locust a bit of experience as well. 
 
 7. Tell us about a project your worked on that you found to be interesting or unusual.
+having to find a performance testing to use and using for mass testing. 
 
 Technical Questions
 
@@ -24,10 +31,19 @@ Technical Questions
 
 2. Describe the differences between Unit Tests, Functional Tests, and Integration Tests?
 	i. Do you have a preference and why? 
+	Unit tests I'd usually write to test and make sure methods are working as expected. Functional tests are more overall front-end tests done for
+	UI using tools like Selenium Webdriver. Integration are useful for service to service and this is something i've done before with robot framework 
+	where i'd send messages and verify the messages being sent back using tools like robot framework. 
+	
+	i have no perference cause all are needed for its own purpose
 
 3. What are the some of the pros and cons of object-oriented programming vs functional programming? 
 
+OOP is useful for code re-use, but if a method in the object causes in error it will causes errors all over app which uses that specific object. 
+
 4. What security concerns have you come across in the past and how have you addressed them?
+
+not a lot in the past. we usually try to do some pen tests and sql injections and such during the testing pahhse
 
 Small Programming Challenges
 
